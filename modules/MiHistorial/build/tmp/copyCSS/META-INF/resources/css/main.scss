@@ -1,0 +1,57 @@
+/* Estilos para la línea de tiempo */
+.MiHistorial {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-years {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .timeline-chip {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .timeline-events {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .timeline-event {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: #007bff;
+    margin: 4px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 320px) {
+    .timeline-chip {
+      width: 45%;
+    }
+  }
+  
+  /* Estilos para hover en web */
+  .timeline-event:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Estilos para evento activo */
+  .timeline-event.active {
+    background-color: #28a745;
+  }
+  
